@@ -27,6 +27,7 @@ def run():
 
 if __name__ == '__main__':
     import traceback
+    import time
     while True:
         try:
             run()
@@ -34,4 +35,5 @@ if __name__ == '__main__':
             raise
         except:
             traceback.print_exc()
+            time.sleep(1)
 
