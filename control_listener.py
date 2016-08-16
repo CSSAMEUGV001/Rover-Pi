@@ -13,7 +13,9 @@ def neutralize():
 def run():
     client = pisocket.SocketCommunicator.client()
 
+    timer = threading.Timer(1.0, neutralize)
     while True:
+        timer.cancel()
         timer = threading.Timer(1.0, neutralize)
         timer.start()
         message = client.read_to_nul()
