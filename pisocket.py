@@ -1,6 +1,6 @@
 import socket
 
-MASTER_SERVER = '192.168.1.3'
+MASTER_SERVER = 'muchomath.us.to'
 PORT = 5001
 KEY = b'0kXMZqwpoAgRUqOXk2Tjsubd1qndPyGR'
 NUL = b'\0'
