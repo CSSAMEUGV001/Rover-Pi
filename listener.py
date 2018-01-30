@@ -58,14 +58,12 @@ class RoverNamespace(BaseNamespace):
     def on_connect(self):
         logger.info('connected')
         self.continue_capture = True
-        if not self.capture_timer:
-            self.start_capture_timer()
+        self.capture()
 
     def on_reconnect(self):
         logger.info('reconnected')
         self.continue_capture = True
-        if not self.capture_timer:
-            self.start_capture_timer()
+        self.capture()
 
     def on_disconnect(self):
         logger.info('disconnected')
