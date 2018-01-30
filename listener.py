@@ -40,7 +40,7 @@ class RoverNamespace(BaseNamespace):
         self.neutralize_timer.start()
 
     def start_capture_timer(self):
-        self.capture_timer = threading.Timer(0.25, self.capture)
+        self.capture_timer = threading.Timer(0.5, self.capture)
         self.capture_timer.start()
 
     def capture(self):
